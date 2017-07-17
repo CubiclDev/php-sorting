@@ -70,7 +70,8 @@ class SortManagerTest extends \PHPUnit_Framework_TestCase
     {
         $comparable1 = $this->getComparable();
         $comparable2 = $this->getComparable();
-        $comparable2->compareTo($comparable1->reveal())->willReturn(-1)->shouldBeCalled();
+        $comparable2->compareTo($comparable1->reveal())->willReturn(-1);
+        $comparable1->compareTo($comparable2->reveal())->willReturn(1);
 
         $this->sortManager->sortComparable([$comparable1->reveal(), $comparable2->reveal()]);
     }
