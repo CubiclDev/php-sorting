@@ -1,0 +1,27 @@
+{
+    "name": "1blankz7/php-sorting",
+    "description": "A sorting library for PHP",
+    "keywords":     ["array", "sorting"],
+    "homepage":     "https://github.com/1blankz7/php-sorting",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Blank",
+            "email": "1blankz7@googlemail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sorting\\": [
+                "src"
+            ],
+            "Sorting\\Test\\": [
+                "tests"
+            ]
+        }
+    }
+}
