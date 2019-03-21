@@ -2,6 +2,7 @@
 
 namespace Sorting\Test\Unit;
 
+use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
 use Sorting\Comparable;
@@ -14,7 +15,7 @@ use Sorting\SortManagerInterface;
  *
  * @package Sorting
  */
-class SortManagerTest extends \PHPUnit_Framework_TestCase
+class SortManagerTest extends TestCase
 {
     /**
      * @var SortManagerInterface
@@ -48,7 +49,9 @@ class SortManagerTest extends \PHPUnit_Framework_TestCase
     public function itShouldCallTheCompareMethodOnTheComparatorWithTwoValues()
     {
         $comparator = $this->getComparator();
-        $comparator->compare(Argument::any(), Argument::any())->willReturn(-1)->shouldBeCalled();
+        $comparator->compare(Argument::any(), Argument::any())
+                   ->willReturn(-1)
+                   ->shouldBeCalled();
 
         $this->sortManager->sortWithComparator($comparator->reveal(), [1, 2]);
     }
@@ -70,8 +73,7 @@ class SortManagerTest extends \PHPUnit_Framework_TestCase
     {
         $comparable1 = $this->getComparable();
         $comparable2 = $this->getComparable();
-        $comparable2->compareTo($comparable1->reveal())->willReturn(-1);
-        $comparable1->compareTo($comparable2->reveal())->willReturn(1);
+        $comparable1->compareTo($comparable2->reveal())->willReturn(1)->shouldBeCalled();
 
         $this->sortManager->sortComparable([$comparable1->reveal(), $comparable2->reveal()]);
     }
