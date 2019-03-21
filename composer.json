@@ -1,14 +1,15 @@
 {
-    "name": "1blankz7/php-sorting",
+    "name": "cubicl/php-sorting",
     "description": "A sorting library for PHP",
     "keywords":     ["array", "sorting"],
-    "homepage":     "https://github.com/1blankz7/php-sorting",
+    "homepage":     "https://github.com/cubicldev/php-sorting",
     "type": "library",
     "license": "MIT",
-    "authors": [
+    "authors":      [
         {
-            "name": "Christian Blank",
-            "email": "1blankz7@googlemail.com"
+            "name":      "Christian Blank",
+            "email":     "christian@cubicl.de",
+            "homepage":  "https://cubicl.de"
         }
     ],
     "scripts": {

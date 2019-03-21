@@ -1,7 +1,7 @@
 Sorting Module
 ==============
 
-[![Build Status](https://travis-ci.org/1blankz7/php-sorting.svg?branch=master)](https://travis-ci.org/1blankz7/php-sorting)
+[![Build Status](https://travis-ci.org/cubicldev/php-sorting.svg?branch=master)](https://travis-ci.org/cubicldev/php-sorting)
 
 Implementation of a generic sorting system with an interface definition compatible
 to the [Comparable RFC](https://wiki.php.net/rfc/comparable).
