@@ -1,13 +1,13 @@
 <?php
 
-namespace Sorting;
+namespace Cubicl\Sorting;
 
 /**
  * A sort manager handles user defined sorting of objects or value types. Make sure
  * that the objects or the values you want to sort have a total ordering, otherwise
  * the result of the methods is not specified.
  *
- * @package Sorting
+ * @package Cubicl\Sorting
  */
 interface SortManagerInterface
 {

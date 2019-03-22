@@ -1,19 +1,19 @@
 <?php
 
-namespace Sorting\Test\Unit;
+namespace Cubicl\Sorting\Test\Unit;
 
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
-use Sorting\Comparable;
-use Sorting\ComparatorInterface;
-use Sorting\SortManager;
-use Sorting\SortManagerInterface;
+use Cubicl\Sorting\Comparable;
+use Cubicl\Sorting\ComparatorInterface;
+use Cubicl\Sorting\SortManager;
+use Cubicl\Sorting\SortManagerInterface;
 
 /**
  * Class SortManagerTest
  *
- * @package Sorting
+ * @package Cubicl\Sorting
  */
 class SortManagerTest extends TestCase
 {

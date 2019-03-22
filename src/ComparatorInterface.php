@@ -1,11 +1,11 @@
 <?php
 
-namespace Sorting;
+namespace Cubicl\Sorting;
 
 /**
  * Interface ComparatorInterface
  *
- * @package Sorting
+ * @package Cubicl\Sorting
  */
 interface ComparatorInterface
 {

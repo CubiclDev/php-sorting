@@ -23,10 +23,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Sorting\\": [
+            "Cubicl\\Sorting\\": [
                 "src"
             ],
-            "Sorting\\Test\\": [
+            "Cubicl\\Sorting\\Test\\": [
                 "tests"
             ]
         }

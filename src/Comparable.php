@@ -1,13 +1,13 @@
 <?php
 
-namespace Sorting;
+namespace Cubicl\Sorting;
 
-use Sorting\Exception\InvalidComparisonException;
+use Cubicl\Sorting\Exception\InvalidComparisonException;
 
 /**
  * Interface for the natural ordering of objects.
  *
- * @package Sorting
+ * @package Cubicl\Sorting
  */
 interface Comparable {
 

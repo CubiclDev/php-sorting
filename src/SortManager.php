@@ -1,11 +1,11 @@
 <?php
 
-namespace Sorting;
+namespace Cubicl\Sorting;
 
 /**
  * Class SortManager
  *
- * @package Sorting
+ * @package Cubicl\Sorting
  */
 class SortManager implements SortManagerInterface
 {
