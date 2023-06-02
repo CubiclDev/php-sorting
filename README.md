@@ -1,7 +1,4 @@
-Cubicl\Sorting Module
-==============
-
-[![Build Status](https://travis-ci.org/CubiclDev/php-sorting.svg?branch=master)](https://travis-ci.org/CubiclDev/php-sorting)
+# Cubicl\Sorting Module
 
 Implementation of a generic sorting system with an interface definition compatible
 to the [Comparable RFC](https://wiki.php.net/rfc/comparable).

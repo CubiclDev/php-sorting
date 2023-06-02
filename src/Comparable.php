@@ -6,8 +6,6 @@ use Cubicl\Sorting\Exception\InvalidComparisonException;
 
 /**
  * Interface for the natural ordering of objects.
- *
- * @package Cubicl\Sorting
  */
 interface Comparable {
 
@@ -22,5 +20,5 @@ interface Comparable {
      * @return int
      * @throws InvalidComparisonException
      */
-    public function compareTo($other);
+    public function compareTo(mixed $other): int;
 }

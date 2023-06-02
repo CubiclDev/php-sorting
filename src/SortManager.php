@@ -2,17 +2,12 @@
 
 namespace Cubicl\Sorting;
 
-/**
- * Class SortManager
- *
- * @package Cubicl\Sorting
- */
 class SortManager implements SortManagerInterface
 {
     /**
      * @inheritdoc
      */
-    public function sortWithComparator(ComparatorInterface $comparator, array $list)
+    public function sortWithComparator(ComparatorInterface $comparator, array $list): array
     {
         usort($list, [$comparator, 'compare']);
 
@@ -22,7 +17,7 @@ class SortManager implements SortManagerInterface
     /**
      * @inheritdoc
      */
-    public function sortComparable(array $list)
+    public function sortComparable(array $list): array
     {
         usort(
             $list,

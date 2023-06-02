@@ -5,27 +5,21 @@ namespace Cubicl\Sorting\Test\Unit;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
+use Prophecy\PhpUnit\ProphecyTrait;
 use Cubicl\Sorting\Comparable;
 use Cubicl\Sorting\ComparatorInterface;
 use Cubicl\Sorting\SortManager;
 use Cubicl\Sorting\SortManagerInterface;
 
-/**
- * Class SortManagerTest
- *
- * @package Cubicl\Sorting
- */
 class SortManagerTest extends TestCase
 {
-    /**
-     * @var SortManagerInterface
-     */
-    private $sortManager;
+    use ProphecyTrait;
+    private SortManagerInterface $sortManager;
 
     /**
      *
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         $this->sortManager = new SortManager();
